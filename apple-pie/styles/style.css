@@ -1,103 +1,69 @@
 html {
-    font-family: sans-serif;
     background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 body {
-    margin: 0 60px;
-    font-size: 24px;
-    background-color: white;
-    
+position: absolute;
+font-family: sans-serif;
+background-color: white;
+margin: 0;
 }
 
-header {
-    background-image: url("../images/apple-pie.jpg");
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+#header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.apple-pie {
+    width: 750px;
+    height: 450px;
+    position: relative;
+    object-fit: cover;
+    object-position: 100% 20%;
 }
 
 h1 {
+    position: absolute;
+    top: 8rem;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#recipe-section {
+    text-align: center;
+}
+
+.recipe-text {
+    width: 650px;
+    margin: 55px auto;
+    font-size: 1.2em;
+}
+
+.recipe-info {
+    width: 300px;
+}
+
+#cooking-info-section h2, ul {
+    width: 650px;
     margin: auto;
-    line-height: 400px;
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    transition: all 1s;
+    list-style: none;
 }
 
-h1:hover {
-    color: red;
-}
-
-main{
-    padding: 0 25% 15% 25%;
-}
-
-main > div{
-    padding-top: 30px;
-}
-
-img {
+.cooking-info {
     display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    width: 280px;
 }
 
-#description {
-    border-bottom: 3px solid darkgray;
-    text-align: center;
-    animation: wildnout .3s infinite;
-    
+#directions-section {
+    width: 650px;
+    margin: auto;
+    margin-bottom: 76px;
 }
 
-ul{
-    list-style-type: "-";
-    opacity: 0;
-    height: 0px;
-    overflow: hidden;
-    transition: all 1s;
+.directions-text {
+    margin: 0 auto;
 }
-
-#ingredients{
-    border-bottom: 3px solid darkgray;
-}
-
-li:nth-of-type(3n + 1){
-    background: chocolate;
-
-}
-
-ul:hover li:nth-child(even){
-    background-color: purple;
-}
-
-input:checked + label + ul {
-    color: red;
-    opacity: 1;
-    height: 300px;
-}
-
-ol li::before {
-    content:")";
-}
-    
-@keyframes wildnout {
-    0% {
-        color: green;
-        transform:rotate(180deg);
-    }
-    50% {
-        color: pink;
-        transform:rotateX(360deg);
-        background-color: yellow;
-    }
-    100% {
-        color: magenta;
-    }
-
-
-}
-
